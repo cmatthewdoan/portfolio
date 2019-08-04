@@ -20,7 +20,7 @@
 	color: var(--high);
 	background-color: var(--primary-alpha);
 	box-shadow: 0 0.2rem 0.4rem 0.1rem var(--primary);
-	border-bottom: 0.2rem solid var(--primary-1);
+	border-bottom: 0.2rem solid var(--primary-2);
 
 	display: flex;
 	flex-direction: row;
@@ -38,6 +38,8 @@
 
 .header__logo__sub-title {
 	display: none;
+	font-size: 1.2em;
+	margin-left: 0.5rem;
 }
 
 .header__nav-list {
@@ -53,30 +55,92 @@
 	margin: 0 0.2rem;
 	color: var(--high);
 	background-color: var(--primary-1);
+	cursor: pointer;
+}
+
+.header__nav-list__item-active {
+	background-color: var(--primary-2);
+}
+
+.header__nav-list__item:hover {
+	transform: scale(1.2);
+	background-color: var(--primary-3);
 }
 
 .banner-image {
 	width: 100%;
 	min-height: 13vh;
 	background-color: var(--complement-1);
-	border: 1px solid black;
 }
 
 .main {
 	flex-grow: 1;
 	width: var(--main-width);
-	min-height: 150vh;
 	background-color: var(--complement-1);
 }
 
 .footer {
 	width: 100%;
-	min-height: 10vh;
-	padding: 1rem;
-	padding-top: 2rem;
+	min-height: 15vh;
 	z-index: 900;
-	text-align: center;
 	color: var(--secondary-2);
 	background-color: var(--secondary--2);
 	box-shadow: 0 -0.1rem 0.3rem 0.1rem var(--neutral--2);
+
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer__social-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.footer__copyright {
+	text-align: center;
+}
+
+.social-nav__link {
+	margin: 0.5rem 1rem;
+	height: 3rem;
+	width: 3rem;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.linkedin-link {
+	background-image: url("../../images/linkedin_icon.png");
+}
+
+.linkedin-link:hover {
+	background-image: url("../../images/linkedin_icon_colored.png");
+}
+
+.github-link {
+	background-image: url("../../images/github_icon.png");
+}
+
+.github-link:hover {
+	background-image: url("../../images/github_icon_colored.png");
+}
+
+.facebook-link {
+	background-image: url("../../images/facebook_icon.png");
+}
+
+.facebook-link:hover {
+	background-image: url("../../images/facebook_icon_colored.png");
+}
+
+.twitter-link {
+	background-image: url("../../images/twitter_icon.png");
+}
+
+.twitter-link:hover {
+	background-image: url("../../images/twitter_icon_colored.png");
 }
