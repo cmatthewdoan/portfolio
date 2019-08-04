@@ -1,2 +1,1 @@
-# portfolio
-A React version of my portfolio website.
+# Charles Matthew Doan Portfolio

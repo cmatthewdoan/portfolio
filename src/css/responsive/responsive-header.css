@@ -1,0 +1,27 @@
+@media (min-width: 1000px) {
+	.header__logo {
+		margin: 0rem 0.5rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.header__logo__sub-title {
+		display: block;
+		margin-left: 1rem;
+	}
+
+	.header__nav-list {
+		margin: 0rem 0.5rem;
+		justify-content: flex-start;
+	}
+
+	.header__nav-list__item {
+		padding: 0.3rem 0.8rem;
+		margin: 0 0.3rem;
+		color: var(--high);
+		background-color: var(--primary-1);
+	}
+}

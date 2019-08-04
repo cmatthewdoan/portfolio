@@ -1,0 +1,82 @@
+/* PRIMARY CONTENT SKELETON */
+/* This is for positioning, sizing, and layout of the main page containers ONLY. */
+
+.wrapper {
+	/* Never allow the page wrapper to grow larger than the viewport */
+	max-width: 100vw;
+	/* Force page wrapper to take up at least as much vertical space as the viewport height*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.header {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	color: var(--high);
+	background-color: var(--primary-alpha);
+	box-shadow: 0 0.2rem 0.4rem 0.1rem var(--primary);
+	border-bottom: 0.2rem solid var(--primary-1);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.header__logo {
+	margin: 0rem auto;
+}
+
+.header__logo__title {
+	padding-bottom: 0.2rem;
+}
+
+.header__logo__sub-title {
+	display: none;
+}
+
+.header__nav-list {
+	margin: 0rem auto;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-evenly;
+}
+
+.header__nav-list__item {
+	padding: 0.2rem 0.5rem;
+	margin: 0 0.2rem;
+	color: var(--high);
+	background-color: var(--primary-1);
+}
+
+.banner-image {
+	width: 100%;
+	min-height: 13vh;
+	background-color: var(--complement-1);
+	border: 1px solid black;
+}
+
+.main {
+	flex-grow: 1;
+	width: var(--main-width);
+	min-height: 150vh;
+	background-color: var(--complement-1);
+}
+
+.footer {
+	width: 100%;
+	min-height: 10vh;
+	padding: 1rem;
+	padding-top: 2rem;
+	z-index: 900;
+	text-align: center;
+	color: var(--secondary-2);
+	background-color: var(--secondary--2);
+	box-shadow: 0 -0.1rem 0.3rem 0.1rem var(--neutral--2);
+}

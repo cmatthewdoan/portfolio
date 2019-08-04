@@ -1,0 +1,13 @@
+@media (min-width: 535px) {
+	.banner-image {
+		min-height: calc((7 / 16) / 2 * 100vw);
+		max-height: calc(
+			(7 / 16) * 100vw
+		); /* The actual height of the image scaled to current width. */
+		background-image: url("../../images/banner_image.jpg");
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: 100%;
+		background-position: 0 50%;
+		border-bottom: 0.3rem solid var(--primary-1);
+	}
+}
