@@ -1,0 +1,37 @@
+.content-panel {
+	margin: 0.5rem;
+	min-height: 50vh;
+	min-width: 22em;
+	background-color: var(--high);
+	border: 0.12rem solid var(--secondary);
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.5rem 0.08rem var(--shadow-light);
+}
+
+.content-panel__title {
+	padding: 0.3rem;
+	margin: 0.5rem;
+	color: var(--primary);
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 0.15rem solid var(--secondary);
+}
+
+.content-panel__subtitle {
+	padding: 0.2rem;
+	margin: 0.4rem;
+	color: var(--primary);
+	border-bottom: 0.1rem solid var(--secondary--1);
+}
+
+.content-panel__text-block {
+	line-height: 1.618;
+	margin: 0.2rem;
+	padding: 0.2em;
+	max-width: 30em;
+	color: var(--secondary--3);
+}
+
+.content-panel__section {
+	background-color: #eee;
+}
