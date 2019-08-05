@@ -1,4 +1,28 @@
 @import url("./responsive-header.css");
 @import url("./responsive-banner.css");
-@import url("./responsive-main.css");
 @import url("./responsive-footer.css");
+
+@media (min-width: 600px) {
+	:root {
+		--main-width: 90%;
+	}
+}
+
+@media (min-width: 720px) {
+	.avatar-panel {
+		max-width: 40rem;
+	}
+}
+
+@media (min-width: 950px) {
+	.panel-grid {
+		grid-gap: 2rem;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1300px) {
+	.panel-grid {
+		padding: 2rem;
+	}
+}

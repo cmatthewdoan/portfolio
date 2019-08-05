@@ -19,13 +19,13 @@
 		font-size: 1.5em;
 	}
 
-	.header__nav-list {
+	.header__nav {
 		margin: 0rem 0.5rem;
 		justify-content: flex-start;
 	}
 
-	.header__nav-list__item {
+	.header__nav__link {
 		padding: 0.3rem 0.8rem;
-		margin: 0 0.3rem;
+		margin: 0rem 0.3rem;
 	}
 }

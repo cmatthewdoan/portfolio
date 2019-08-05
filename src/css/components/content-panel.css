@@ -15,7 +15,7 @@
 	color: var(--primary);
 	font-weight: bold;
 	text-align: center;
-	border-bottom: 0.15rem solid var(--secondary);
+	/* border-bottom: 0.15rem solid var(--secondary); */
 }
 
 .content-panel__text-block {
@@ -61,11 +61,12 @@
 	border-bottom: 0.14rem solid var(--secondary--1);
 }
 
-.content-panel__section-grid {
+.content-panel__skills-grid {
 	padding: 0.5rem;
 	display: grid;
 	grid-gap: 0.9rem;
-	grid-template-columns: repeat(2, minmax(min-content, 1fr));
+	grid-template-columns: repeat(2, 1fr);
+	font-weight: bold;
 }
 
 .project-card-gallery {
