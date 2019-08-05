@@ -1,4 +1,4 @@
-@media (min-width: 760px) {
+@media (min-width: 780px) {
 	.header__logo {
 		margin: 0rem 0.5rem;
 		display: flex;
@@ -14,15 +14,6 @@
 }
 
 @media (min-width: 1000px) {
-	/* .header__logo {
-		margin: 0rem 0.5rem;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-	} */
-
 	.header__logo__sub-title {
 		margin-left: 1rem;
 		font-size: 1.5em;
