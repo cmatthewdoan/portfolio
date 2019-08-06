@@ -3,9 +3,12 @@ import React, { Component } from "react";
 class Footer extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			year: new Date().getFullYear()
+		};
 	}
 	render() {
+		const { year } = this.state;
 		return (
 			<React.Fragment>
 				<footer className="footer">
@@ -44,7 +47,7 @@ class Footer extends Component {
 						</a>
 					</nav>
 					<h3 className="footer__copyright">
-						&copy; 2019 Charles Matthew Doan
+						&copy; {year} Charles Matthew Doan
 					</h3>
 				</footer>
 			</React.Fragment>

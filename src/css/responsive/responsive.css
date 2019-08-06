@@ -9,7 +9,8 @@
 }
 
 @media (min-width: 720px) {
-	.avatar-panel {
+	.avatar-panel,
+	.contact-panel {
 		max-width: 40rem;
 	}
 }

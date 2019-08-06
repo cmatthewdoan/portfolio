@@ -3,100 +3,87 @@ import React, { Component } from "react";
 class ProjectsBlock extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			error: null,
+			isLoaded: false,
+			projects: [
+				{
+					projectLink: "",
+					cardTitle: "Not An Actual Project",
+					imgURL: "images/Jesus_Squirrel.jpg",
+					tools: "Bad Code, Embarassment",
+					description:
+						"If you're seeing this it's because something on my site broke. Look away, please."
+				}
+			]
+		};
 	}
+
+	componentDidMount() {
+		// Reference: https://reactjs.org/docs/faq-ajax.html
+		// Reference: https://stackoverflow.com/questions/49481934/fetching-local-json
+		fetch("/data/projects.json")
+			.then(res => res.json())
+			.then(
+				result => {
+					this.setState({
+						isLoaded: true,
+						projects: result
+					});
+				},
+				// Note: it's important to handle errors here
+				// instead of a catch() block so that we don't swallow
+				// exceptions from actual bugs in components.
+				error => {
+					this.setState({
+						isLoaded: true,
+						error
+					});
+				}
+			);
+	}
+
 	render() {
-		return (
-			<React.Fragment>
-				<div className="content-panel">
-					<h3 className="content-panel__title">My Projects</h3>
-					<div className="project-card-gallery">
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://github.com/charles-m-doan/university-clinic-hospital"
-							className="project-card"
-						>
-							<h3 className="project-card__title">
-								University Hospital Clinic
-							</h3>
+		// Reference: https://reactjs.org/docs/faq-ajax.html
+		const { error, isLoaded, projects } = this.state;
+		if (error) {
+			return <div>Error: {error.message}</div>;
+		} else if (!isLoaded) {
+			return <div>Loading...</div>;
+		} else {
+			return (
+				<React.Fragment>
+					<div className="content-panel">
+						<h3 className="content-panel__title">My Projects</h3>
+						<div className="project-card-gallery">
+							{projects.map((project, index) => (
+								<a
+									key={project.cardTitle + index}
+									target="_blank"
+									rel="noopener noreferrer"
+									href={project.projectLink}
+									className="project-card"
+								>
+									<h3 className="project-card__title">{project.cardTitle}</h3>
 
-							<div className="project-card__body">
-								<figure className="project-card__thumbnail">
-									<img
-										src="images/project_UniversityHospitalClinic.jpg"
-										alt="missing"
-									/>
-								</figure>
-								<h4 className="project-card__tools">
-									Tools: Java 8, Eclipse, Github, Git Bash, JUnit, TDD, Pair
-									Programming
-								</h4>
-								<main className="project-card__description">
-									A simple command-line program that simulates managing and
-									interacting with employees and patients in a hospital setting,
-									including actions like “hire”, “fire”, “pay salary”, and “draw
-									blood”.
-								</main>
-							</div>
-						</a>
-
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://github.com/charles-m-doan/virtual-pet"
-							className="project-card"
-						>
-							<h3 className="project-card__title">Virtual Pet</h3>
-
-							<div className="project-card__body">
-								<figure className="project-card__thumbnail">
-									<img src="images/project_VirtualPet.jpg" alt="missing" />
-								</figure>
-								<h4 className="project-card__tools">
-									Tools: Java 8, Eclipse, Visual Studio, Github, Git Bash,
-									JUnit, TDD, Agile/Scrum
-								</h4>
-								<main className="project-card__description">
-									A command-line simulation for managing a “shelter” of virtual
-									pets. The virtual pets come in various types and have
-									different preferences and internal values that affect things
-									like “health”, “hunger”, and “boredom”.
-								</main>
-							</div>
-						</a>
-
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://github.com/charles-m-doan/airline-on-time-performance"
-							className="project-card"
-						>
-							<h3 className="project-card__title">
-								Airline On-Time Performance
-							</h3>
-
-							<div className="project-card__body">
-								<figure className="project-card__thumbnail">
-									<img src="images/project_AirlineOnTime.jpg" alt="missing" />
-								</figure>
-								<h4 className="project-card__tools">
-									Tools: R Markdown, RStudio, SQlite, Google Drive, Teamwork,
-									Statistics
-								</h4>
-								<main className="project-card__description">
-									An R Markdown report analyzing international flight
-									cancellations and delays using a custom-built database with
-									data from the Bureau of Transportation Statistics. Utilized
-									statistical techniques like ANOVA and post-hoc error
-									correction.
-								</main>
-							</div>
-						</a>
+									<div className="project-card__body">
+										<figure className="project-card__thumbnail">
+											<img src={project.imgURL} alt="missing" />
+										</figure>
+										<h4 className="project-card__tools">
+											Tools: {project.tools}
+										</h4>
+										<main className="project-card__description">
+											{project.description}
+										</main>
+									</div>
+								</a>
+							))}
+						</div>
 					</div>
-				</div>
-			</React.Fragment>
-		);
+				</React.Fragment>
+			);
+		}
 	}
 }
 

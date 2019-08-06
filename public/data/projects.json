@@ -1,0 +1,37 @@
+[
+	{
+		"projectLink": "https://github.com/charles-m-doan/university-clinic-hospital",
+		"cardTitle": "University Hospital Clinic",
+		"imgURL": "images/project_UniversityHospitalClinic.jpg",
+		"tools": "Java 8, Eclipse, Github, Git Bash, JUnit, TDD, Pair-Programming",
+		"description": "A simple command-line program that simulates managing and interacting with employees and patients in a hospital setting, including actions like 'hire', 'fire', 'pay salary', and 'draw blood'."
+	},
+	{
+		"projectLink": "https://github.com/charles-m-doan/virtual-pet",
+		"cardTitle": "Virtual Pet",
+		"imgURL": "images/project_VirtualPet.jpg",
+		"tools": "Java 8, Eclipse, Visual Studio, Github, Git Bash, JUnit, TDD, Agile/Scrum",
+		"description": "A command-line simulation for managing a 'shelter' of virtual pets. The virtual pets come in various types and have different preferences and internal values that affect things like 'health', 'hunger', and 'boredom'."
+	},
+	{
+		"projectLink": "https://github.com/charles-m-doan/airline-on-time-performance",
+		"cardTitle": "Airline On-Time Performance",
+		"imgURL": "images/project_AirlineOnTime.jpg",
+		"tools": "R Markdown, RStudio, SQlite, Google Drive, Teamwork, Statistics",
+		"description": "An R Markdown report analyzing international flight cancellations and delays using a custom-built database with data from the Bureau of Transportation Statistics. Utilized statistical techniques like ANOVA and post-hoc error correction."
+	},
+	{
+		"projectLink": "https://github.com/charles-m-doan/global-alcohol-consumption",
+		"cardTitle": "Global Alcohol Consumption",
+		"imgURL": "images/project_AlcoholConsumption.jpg",
+		"tools": "R Markdown, RStudio, Google Drive, Teamwork, Statistics",
+		"description": "An R Markdown report analyzing alcohol servings per capita for different categories of alcohol across countries using data from the World Health Organization. Utilized statistical techniques like maximum likelihood estimation and quantile-quantile plot comparisons."
+	},
+	{
+		"projectLink": "https://github.com/charles-m-doan/connect-four",
+		"cardTitle": "Connect Four AI",
+		"imgURL": "images/project_ConnectFour.jpg",
+		"tools": "Java 8, Eclipse, Github, Git Bash, Swing",
+		"description": "A graphical user interface and AI opponent for playing a digital version of the popular board game, Connect Four. The AI was programmed using a heuristic-based approach, and the user may choose among multiple dificulty levels."
+	}
+]
