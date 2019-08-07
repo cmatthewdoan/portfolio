@@ -1,5 +1,33 @@
 [
 	{
+		"projectLink": "https://github.com/charles-m-doan/stonkify-backend",
+		"cardTitle": "Stonkify",
+		"imgURL": "images/project_Stonkify.jpg",
+		"tools": "",
+		"description": ""
+	},
+	{
+		"projectLink": "https://github.com/charles-m-doan/stars-without-number-backend",
+		"cardTitle": "Stars Without Number",
+		"imgURL": "images/project_StarsWithoutNumber.jpg",
+		"tools": "",
+		"description": ""
+	},
+	{
+		"projectLink": "https://github.com/nelhag/Blog-Platform",
+		"cardTitle": "Travel Blog",
+		"imgURL": "images/project_TravelsAbroad.jpg",
+		"tools": "",
+		"description": ""
+	},
+	{
+		"projectLink": "https://github.com/charles-m-doan/reviews-site",
+		"cardTitle": "Blighted Potatoes",
+		"imgURL": "images/project_BlightedPotatoes.jpg",
+		"tools": "",
+		"description": ""
+	},
+	{
 		"projectLink": "https://github.com/charles-m-doan/university-clinic-hospital",
 		"cardTitle": "University Hospital Clinic",
 		"imgURL": "images/project_UniversityHospitalClinic.jpg",
