@@ -3,42 +3,42 @@
 		"projectLink": "https://github.com/charles-m-doan/stonkify-backend",
 		"cardTitle": "Stonkify",
 		"imgURL": "images/project_Stonkify.jpg",
-		"tools": "",
-		"description": ""
+		"tools": "Java 8, Spring Boot, Javascript Rendering, JUnit/Hamcrest, AJAX, TDD/Agile",
+		"description": "A full-stack web app with \"Spotify-like\" features that enable users to browse and play music albums, artists, and songs. It is designed as a single-page front-end (SPA) and a REST API back-end built with Spring Boot."
 	},
 	{
 		"projectLink": "https://github.com/charles-m-doan/stars-without-number-backend",
-		"cardTitle": "Stars Without Number",
+		"cardTitle": "SWN Character Generator",
 		"imgURL": "images/project_StarsWithoutNumber.jpg",
-		"tools": "",
-		"description": ""
+		"tools": "Java 8, Spring Boot, JUnit/Hamcrest, Thymleaf, TDD/Agile",
+		"description": "Stars Without Number is a table-top role playing game similar to dungeons and dragons. This project is a rudimentary character sheet generator that allows users to create a basic character and browse existing characters. The current iteration only allows a subset of fields to be used rather than the full content of a real character sheet."
 	},
 	{
 		"projectLink": "https://github.com/nelhag/Blog-Platform",
 		"cardTitle": "Travel Blog",
 		"imgURL": "images/project_TravelsAbroad.jpg",
-		"tools": "",
-		"description": ""
+		"tools": "Java 8, Spring Boot, JUnit/Hamcrest, Thymleaf, TDD, Agile",
+		"description": "A full-stack website for generic blog posting, tagging, and commenting about travel experiences. All content in the existing demo is randomly generated latin used as placeholders, but the functionality allows for any content."
 	},
 	{
 		"projectLink": "https://github.com/charles-m-doan/reviews-site",
 		"cardTitle": "Blighted Potatoes",
 		"imgURL": "images/project_BlightedPotatoes.jpg",
-		"tools": "",
-		"description": ""
+		"tools": "Java 8, Spring Boot, JUnit/Hamcrest, Thymleaf, TDD, Agile",
+		"description": "A full-stack website for movie reviews that allows a user to browse categories and tags, post and tag reviews, and leave comments on existing reviews."
 	},
 	{
 		"projectLink": "https://github.com/charles-m-doan/university-clinic-hospital",
 		"cardTitle": "University Hospital Clinic",
 		"imgURL": "images/project_UniversityHospitalClinic.jpg",
 		"tools": "Java 8, Eclipse, Github, Git Bash, JUnit, TDD, Pair-Programming",
-		"description": "A simple command-line program that simulates managing and interacting with employees and patients in a hospital setting, including actions like 'hire', 'fire', 'pay salary', and 'draw blood'."
+		"description": "A command-line program that simulates managing and interacting with employees and patients in a hospital setting, including actions like 'hire', 'fire', 'pay salary', and 'draw blood'."
 	},
 	{
 		"projectLink": "https://github.com/charles-m-doan/virtual-pet",
 		"cardTitle": "Virtual Pet",
 		"imgURL": "images/project_VirtualPet.jpg",
-		"tools": "Java 8, Eclipse, Visual Studio, Github, Git Bash, JUnit, TDD, Agile/Scrum",
+		"tools": "Java 8, Eclipse, Github, Git Bash, JUnit, TDD, Agile",
 		"description": "A command-line simulation for managing a 'shelter' of virtual pets. The virtual pets come in various types and have different preferences and internal values that affect things like 'health', 'hunger', and 'boredom'."
 	},
 	{

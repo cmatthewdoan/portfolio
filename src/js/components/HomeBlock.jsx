@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class HomeBlock extends Component {
 	constructor(props) {
@@ -17,8 +18,10 @@ class HomeBlock extends Component {
 						Welcome! My name is Charles and I live in Columbus Ohio where I
 						develop software and study data analytics. When I'm not coding I
 						juggle a long list of hobbies, most of which would bore you. What
-						won't bore you (I hope) are my awesome projects, so be sure to check
-						'em out!
+						won't bore you (I hope) are my awesome projects, so be sure to{" "}
+						<Link to="/projects">
+							<span className="emphasis__link">check 'em out!</span>
+						</Link>
 					</span>
 				</div>
 			</React.Fragment>

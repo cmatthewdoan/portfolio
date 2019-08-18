@@ -37,6 +37,16 @@
 	color: var(--secondary);
 }
 
+.emphasis__link {
+	font-size: 1.2em;
+	color: var(--primary);
+}
+
+.emphasis__link:hover {
+	font-weight: bold;
+	color: var(--secondary);
+}
+
 .panel-grid {
 	display: grid;
 	grid-gap: 1rem;

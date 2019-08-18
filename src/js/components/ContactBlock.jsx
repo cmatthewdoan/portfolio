@@ -16,12 +16,16 @@ class ContactBlock extends Component {
 						science on the side. My dream is to work on artificial general
 						intelligence, but I'm eager for any coding that helps continue
 						developing my skills. The way I see it, every time I bang my head on
-						the desk in frustration I'm leveling up, so I can't wait to
-						contribute to a team working on some big, complicated code monster!
+						the desk in frustration I'm &quot;leveling up,&quot; so I can't wait
+						to contribute to a team working on some big, complicated code
+						monster!
 					</span>
 					<span className="content-panel__text-block">
-						For phone contact please use my Google Voice number. Otherwise feel
-						free to send me a text or email.
+						For phone contact please use my{" "}
+						<a href="tel:6142854701‬" className="content-panel__link">
+							Google Voice number
+						</a>
+						. Otherwise feel free to send me a text or email.
 					</span>
 
 					<nav className="contact__nav">

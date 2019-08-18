@@ -6,6 +6,7 @@ class Banner extends Component {
 		super(props);
 		this.state = {};
 	}
+
 	render() {
 		return (
 			<React.Fragment>
@@ -20,6 +21,7 @@ class Banner extends Component {
 							to="/home"
 							className="header__nav__link"
 							activeClassName="header__nav__link-active"
+							isActive={this.checkHomePageMatches}
 						>
 							Home
 						</NavLink>
@@ -51,6 +53,14 @@ class Banner extends Component {
 			</React.Fragment>
 		);
 	}
+
+	checkHomePageMatches = (match, location) => {
+		let isActive = false;
+		if (location.pathname === "/" || location.pathname === "/home") {
+			isActive = true;
+		}
+		return isActive;
+	};
 }
 
 export default Banner;

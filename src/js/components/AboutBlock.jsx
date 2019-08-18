@@ -49,7 +49,8 @@ class AboutBlock extends Component {
 							</span>
 							<span className="content-panel__text-block">
 								My "customers" were officers, contractors, and fellow enlisted
-								personnel on a ship of roughly 7000 people. Naval IT duties are
+								personnel on a ship with a population varying between about 3000
+								and 7000 people depending on the mission. Naval IT duties are
 								similar to those of a civilian IT, but combine areas such as
 								helpdesk tech, sys admin, network tech, security analyst, and
 								radio tech. Included are also navy-specific work such as ship
